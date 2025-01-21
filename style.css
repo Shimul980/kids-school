@@ -108,8 +108,13 @@ p {
 }
 
 .btn1:hover {
-    background-color: rgb(10, 79, 79);
+    background-color: rgb(255, 255, 255);
+    
+    border: none;
+    font-weight: 600;
+    color: #000;
     transition: 1s;
+    font-size: 25px;
 }
 
 .section2 {
@@ -124,9 +129,10 @@ p {
 .curris {
     justify-content: space-between;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin: 90px 20px;
 }
+
 
 .curri {
     border-radius: 20px;
@@ -134,6 +140,13 @@ p {
     justify-content: center;
     padding: 50px;
     box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.219);
+}
+
+.curri>a:hover{
+    transition: 0.5s;
+    font-size: 22px;
+    box-shadow: 0 0 110px 15px;
+
 }
 
 .arro>img {
@@ -182,7 +195,7 @@ p {
     height: 30px;
     width: 150px;
     border: none;
-    margin-left: -310px;
+    margin-left: -200px;
 
 }
 
@@ -193,7 +206,7 @@ p {
     height: 30px;
     width: 150px;
     border: none;
-    margin-left: -110px;
+    margin-left: -50px;
 }
 
 .lh2 {
@@ -233,26 +246,41 @@ p {
     height: 40px;
     width: 150px;
     border-radius: 9px;
+    transition: 1s;
+}
+.lstbtn:hover{
+    background-color: rgb(195, 207, 26);
+    font-size: 20px;
+    font-weight: 600;
+    color: #050505;
+    box-shadow: 0 0 10px 5px rgb(167, 167, 5);
+    transition: 1s;
+}
 
+
+.pp{
+    line-height: 18px;
+    font-size: 1em;
 }
 
 
 
 
 
-
-
-
 @media screen and (max-width: 800px) {
-
-
+ 
+    .section3{
+        width: 100%;
+    }
 
     .boxbutt {
-        margin-left: -60px;
+        height: 9%;
+        width: 60%;
+        margin-left: -10px;
     }
 
     .firstdiv {
-        margin: 0px 50px;
+        margin: 0px 010px;
     }
 
 
@@ -284,9 +312,14 @@ p {
     .section1 {
         margin-top: 150px;
         display: flex;
+        
         flex-direction: column-reverse;
         text-align: center;
         justify-content: center;
+    }
+    .hero{
+        background-color: rgba(0, 255, 255, 0);
+        width: 100%;
     }
 
     .txt1>h1 {
@@ -296,6 +329,7 @@ p {
     .txt1>h1,
     p {
         margin-top: 20px;
+        font-size: 3em;
         text-align: center;
         justify-content: center;
     }
@@ -374,15 +408,29 @@ a {
     color: aliceblue;
 
     text-decoration: none;
+    transition: 0.4s;
+}
+.lastdiv li a:hover{
+    background-color: #f80505;
+    transition: 1s;
+    border-radius: 10px;
 }
 
 .lastdiv {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    
 }
 
 .logos>img {
-    height: 30px;
-    weight: 30px;
+    height: 100%;
+    weight: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.logos:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 10px 5px black;
 }
