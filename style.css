@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header{
+    position: fixed;
+    height: 15%;
+    width: 100%;
+}
+
+nav{
+    background-color: rgba(240, 254, 254, 0.201);
+    width: 80%;
+    margin: 0 auto;
+    justify-content: space-between;
+    margin-top: 20px ;
+    display: flex;
+}
+.navlogo{
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.navlinks{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+.navlink>a{
+    color: rgb(255, 255, 255);
+    
+    font-size: 20px;
+    font-weight: 500;
+}
+.navlink{
+    margin-top: 10px;
+    background-color: rgb(255, 183, 0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    height: 40px;
+    width: 130px;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.section1{
+    margin: 0 auto;
+    display: flex;
+    height: 700px;
+    justify-content: space-around;
+    width: 90%;
+    padding-top: 1px;
+    background-color: rgba(0, 255, 255, 0);
+}
+.txt1{
+    margin-top: 100px;
+}
+.txt1>h1,p{
+    text-align: left;
+    margin-left: 10px;
+    margin-right: 20px;
+    background-color: rgba(245, 245, 220, 0);
+}
+.txt1>p{
+    font-size: 20px;
+}
+.txt1>h1{
+    line-height: 80px;
+    font-size: 50px;
+}
+.btn1{
+    margin-top: 60px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-size: 20px;
+    height: 60px;
+    width: 150px;
+    background-color: black;
+    border-radius: 8px;
+    color: white;
+    transition: 1s;
+}
+.btn1:hover{
+    background-color: rgb(10, 79, 79);
+    transition: 1s;
+}
+.section2{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 250px auto;
+    /* background-color: aqua; */
+    background-image:url(./assets/bg.png);
+}
+
+.curris{
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+    height: 350px;
+    margin: 90px 20px;
+}
+.curri{
+    border-radius: 20px;
+    line-height: 40px;
+    justify-content: center;
+    padding: 50px;
+    box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.219);
+}
+
+.arro >img {
+    background-color: rgb(255, 166, 0);
+    border-radius: 500px;
+    text-decoration: none;
+    border: none;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+}
+
+.arro {
+    background-color: rgba(255, 0, 0, 0);
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width: 800px) {
+    .navlinks, .navlogo>h1 ,.navlink{
+        display:none;
+    }
+    
+    header{
+        border-bottom: 1px solid rgba(255, 0, 0, 0.308);
+    }
+    .ham {
+        width: 30px;
+        height: 4px;
+        background-color: black;
+        margin: 6px -10px;
+      }
+    .navlogo{
+        margin-left: -19px;
+    }
+
+      .section1{
+        display: flex;
+        flex-direction: column-reverse;
+        text-align: center;
+        justify-content: center;
+      }
+      .txt1>h1{
+        line-height: 40px;
+      }
+      .txt1>h1,p{
+        margin-top: 20px;
+        text-align: center;
+        justify-content: center;
+      }
+      .txt1>p{
+        line-height: 20px;
+      }
+
+      .section2{
+        margin-top: 390px;
+      }
+      .curri{
+        margin: 20px;
+      }
+      .curris{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+      }
+      #hideme{
+        display: none;
+      }
+
+}
+
+
+footer{
+    display: flex;
+}
+
+
+.logos>img{
+    height: 20px;
+    weight: 20px;
+}
