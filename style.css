@@ -1,29 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-li{
+
+li {
     list-style: none;
 }
-a{
+
+a {
     text-decoration: none;
 }
-header{
+
+header {
     position: fixed;
     height: 15%;
     width: 100%;
 }
 
-nav{
+nav {
     background-color: rgba(240, 254, 254, 0.201);
     width: 80%;
     margin: 0 auto;
     justify-content: space-between;
-    margin-top: 20px ;
+    margin-top: 20px;
     display: flex;
 }
-.navlogo{
+
+.navlogo {
     font-size: 25px;
     font-weight: 500;
     margin-left: 30px;
@@ -31,20 +35,22 @@ nav{
     align-items: center;
 }
 
-.navlinks{
+.navlinks {
     font-size: 20px;
     font-weight: 500;
     margin-top: 20px;
     display: flex;
     gap: 30px;
 }
-.navlink>a{
+
+.navlink>a {
     color: rgb(255, 255, 255);
-    
+
     font-size: 20px;
     font-weight: 500;
 }
-.navlink{
+
+.navlink {
     margin-top: 10px;
     background-color: rgb(255, 183, 0);
     padding: 10px 20px;
@@ -57,7 +63,7 @@ nav{
 }
 
 
-.section1{
+.section1 {
     margin: 0 auto;
     display: flex;
     height: 700px;
@@ -66,23 +72,29 @@ nav{
     padding-top: 1px;
     background-color: rgba(0, 255, 255, 0);
 }
-.txt1{
+
+.txt1 {
     margin-top: 100px;
 }
-.txt1>h1,p{
+
+.txt1>h1,
+p {
     text-align: left;
     margin-left: 10px;
     margin-right: 20px;
     background-color: rgba(245, 245, 220, 0);
 }
-.txt1>p{
+
+.txt1>p {
     font-size: 20px;
 }
-.txt1>h1{
+
+.txt1>h1 {
     line-height: 80px;
     font-size: 50px;
 }
-.btn1{
+
+.btn1 {
     margin-top: 60px;
     cursor: pointer;
     margin-left: 10px;
@@ -94,27 +106,29 @@ nav{
     color: white;
     transition: 1s;
 }
-.btn1:hover{
+
+.btn1:hover {
     background-color: rgb(10, 79, 79);
     transition: 1s;
 }
-.section2{
+
+.section2 {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 250px auto;
+    margin: 0 auto;
     /* background-color: aqua; */
-    background-image:url(./assets/bg.png);
+    background-image: url(./assets/bg.png);
 }
 
-.curris{
+.curris {
     justify-content: space-between;
     display: flex;
     gap: 20px;
-    height: 350px;
     margin: 90px 20px;
 }
-.curri{
+
+.curri {
     border-radius: 20px;
     line-height: 40px;
     justify-content: center;
@@ -122,7 +136,7 @@ nav{
     box-shadow: 0 3px 10px 0px rgba(0, 0, 0, 0.219);
 }
 
-.arro >img {
+.arro>img {
     background-color: rgb(255, 166, 0);
     border-radius: 500px;
     text-decoration: none;
@@ -137,6 +151,90 @@ nav{
     border: none;
 }
 
+.section3 {
+    /* background-image: url(./assets/bg.png); */
+    background-image: url(./assets/bg.png), linear-gradient(rgba(255, 0, 0, 0), rgba(255, 225, 0, 0.429));
+    height: 950px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+}
+
+.section3>h1 {}
+
+.boox {
+    margin: 10px;
+    margin-left: 70px;
+    height: 713px;
+    width: 30rem;
+    border-radius: 10px;
+}
+
+.imgs>img {
+    border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.boxbutt2 {
+    position: relative;
+    top: -15px;
+    border-radius: 15px;
+    height: 30px;
+    width: 150px;
+    border: none;
+    margin-left: -310px;
+
+}
+
+.boxbutt {
+    position: relative;
+    top: -15px;
+    border-radius: 15px;
+    height: 30px;
+    width: 150px;
+    border: none;
+    margin-left: -110px;
+}
+
+.lh2 {
+    margin: 40px 10px;
+    font-size: 25px;
+}
+
+.boxes {
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: -10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.firstdiv {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.booox {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.lstbtn {
+    margin: 30px auto;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    border-radius: 9px;
+
+}
 
 
 
@@ -145,76 +243,146 @@ nav{
 
 
 
+@media screen and (max-width: 800px) {
 
 
 
-
-
-
-
-
-
-
-@media  screen and (max-width: 800px) {
-    .navlinks, .navlogo>h1 ,.navlink{
-        display:none;
+    .boxbutt {
+        margin-left: -60px;
     }
-    
-    header{
+
+    .firstdiv {
+        margin: 0px 50px;
+    }
+
+
+    .hidden {
+        display: none;
+    }
+
+    .navlinks,
+    .navlogo>h1,
+    .navlink {
+        display: none;
+    }
+
+    header {
         border-bottom: 1px solid rgba(255, 0, 0, 0.308);
     }
+
     .ham {
         width: 30px;
         height: 4px;
         background-color: black;
         margin: 6px -10px;
-      }
-    .navlogo{
+    }
+
+    .navlogo {
         margin-left: -19px;
     }
 
-      .section1{
+    .section1 {
+        margin-top: 150px;
         display: flex;
         flex-direction: column-reverse;
         text-align: center;
         justify-content: center;
-      }
-      .txt1>h1{
+    }
+
+    .txt1>h1 {
         line-height: 40px;
-      }
-      .txt1>h1,p{
+    }
+
+    .txt1>h1,
+    p {
         margin-top: 20px;
         text-align: center;
         justify-content: center;
-      }
-      .txt1>p{
-        line-height: 20px;
-      }
+    }
 
-      .section2{
+    .txt1>p {
+        line-height: 20px;
+    }
+
+    .section2 {
         margin-top: 390px;
-      }
-      .curri{
+    }
+
+    .curri {
         margin: 20px;
-      }
-      .curris{
+    }
+
+    .curris {
         display: flex;
         flex-direction: column;
         margin-top: 30px;
-      }
-      #hideme{
-        display: none;
-      }
+    }
 
+    #hideme {
+        display: none;
+    }
+
+    .footer {
+        flex-direction: column;
+        height: 700px;
+        justify-content: space-between;
+        display: flex;
+        margin-bottom: 0px;
+        padding: 30px;
+        padding-top: 100px;
+        height: 100%;
+        width: 100%;
+        background-color: rgb(9, 173, 255);
+    }
+
+    .lastdiv {
+        margin-top: 30px;
+    }
 }
 
 
-footer{
+footer {
+    justify-content: space-between;
+    display: flex;
+    margin-bottom: 0px;
+    padding: 30px;
+    padding-top: 100px;
+    height: 400px;
+    width: 100%;
+    color: aliceblue;
+    background-color: rgb(9, 173, 255);
+}
+
+.lastimg {
+    color: aliceblue;
     display: flex;
 }
 
+.lastimg>img {
+    background-color: aliceblue;
+}
 
-.logos>img{
-    height: 20px;
-    weight: 20px;
+.lastlogo {
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.lastdiv,
+li,
+a {
+    color: aliceblue;
+
+    text-decoration: none;
+}
+
+.lastdiv {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logos>img {
+    height: 30px;
+    weight: 30px;
 }
