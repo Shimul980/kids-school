@@ -19,8 +19,10 @@ header {
 }
 
 nav {
-    background-color: rgba(240, 254, 254, 0.201);
+    
+    background-color: rgba(232, 255, 255, 0.219);
     width: 80%;
+    border-radius: 10px;
     margin: 0 auto;
     justify-content: space-between;
     margin-top: 20px;
@@ -84,7 +86,7 @@ nav {
     padding-top: 1px;
     background-color: rgba(0, 255, 255, 0);
 }
-
+   
 .txt1 {
     margin-top: 100px;
 }
@@ -435,7 +437,9 @@ a {
     
 }
 
+
 .logos>img {
+    /* mix-blend-mode: color-burn; */
     height: 100%;
     weight: 100%;
     padding: 0;

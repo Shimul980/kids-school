@@ -6,13 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kids-school</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            transition:  1.3s, color 0.3s;
+        }
+        .dark-mode {
+            background: #121212;
+            color: #ffffff;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background: #007bff;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <nav>
+        <nav class="nav">
             <div class="navlogo">
-                <img src="./assets/logo.png" alt="logo">
+                <button onclick="toggleDarkMode()"><img src="./assets/logo.png" alt="logo"></button>
                 <h1>SCHOOL</h1>
             </div>
 
@@ -59,6 +84,21 @@
 
             <div>
                 <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
+                <marquee direction="" style="color: red;">Standard Curriculum Standard Curriculum Standard Curriculum Standard Curriculum</marquee>
                 <h1 class="sec2">Standard Curriculum</h1>
                 <div class="curris">
 
@@ -91,9 +131,13 @@
 
                         <h4>Middle (10-16) Years</h4>
 
-                        <p class="pp">Cum sociis natoque penatibus et magnis
-                            dis parturient montes, nascetur ridiculus
-                            mu sdis parturient</p>
+                        <p class="pp">
+
+                            I am a serious
+                            learning. I am investing at least
+                            6-8hrs every single day. No gap at all 
+            </p>
+            
                         <a href="Read More" style="color: rgb(251, 0, 255);">Read More</a>
                     </div>
                 </div>
@@ -152,14 +196,6 @@
                         changes is a platform for open discussion in an inclusive and <br>
                         collaborative environment, providing the...</p>
                 </div>
-
-
-
-
-
-
-
-
 
 
 
@@ -295,6 +331,30 @@
             </div>
         </div>
     </footer>
+
+  
+    
 </body>
+
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+        // Save preference
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
+    }
+
+    // Load user preference
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+    }
+
+   
+
+</script>
 
 </html>
